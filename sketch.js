@@ -6,12 +6,12 @@ function setup() {
 
 function draw() {
   if (mouseIsPressed) {
-    if (penStats == 1) {
+    if (penState == 1) {
       strokeWeight(10);
       stroke(10);
       line(mouseX, mouseY, pmouseX, pmouseY);
     }
-    if (penStats == 2) {
+    if (penState == 2) {
       fill("red");
       noStroke();
       ellipse(mouseX, mouseY, 60, 60);
